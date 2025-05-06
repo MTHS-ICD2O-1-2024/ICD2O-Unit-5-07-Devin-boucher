@@ -7,8 +7,7 @@
 'use strict'
 
 // eslint-disable-next-line no-unused-vars
-
-function sumNumbers() {
+function sumNumbers () {
   const userInput = parseInt(document.getElementById('user-number').value)
   let sum = 0
 
