@@ -8,16 +8,13 @@
 
 // eslint-disable-next-line no-unused-vars
 
-  function multiplyNumbers() {
-  const num1 = parseInt(document.getElementById('number1').value)
-  const num2 = parseInt(document.getElementById('number2').value)
-  let result = 0
-  let count = 0
+function sumNumbers() {
+  const userInput = parseInt(document.getElementById('user-number').value)
+  let sum = 0
 
-  while (count < num2) {
-    result = result + num1
-    count++
+  for (let counter = 1; counter <= userInput; counter++) {
+    sum += counter
   }
 
-  document.getElementById('multiply-result').innerHTML = `<p><strong>${num1} x ${num2} = ${result}</strong></p>`
+  document.getElementById('sum-result').innerHTML = `<p><strong>The sum of all numbers from 1 to ${userInput} is ${sum}.</strong></p>`
 }
